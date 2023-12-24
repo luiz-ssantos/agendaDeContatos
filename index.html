@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Metadados -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Ícone da página -->
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Título da página -->
+    <title>Agenda de Contatos</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <h1>Agenda de Contatos</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <section id="contatos">
+        <!-- Cabeçalho dos contatos -->
+        <div id="cabecalhoContatos">
+          <img src="images/001.png" alt="Caderno de contatos" />
+          <h2>Contatos</h2>
+        </div>
+
+        <!-- Formulário de adição de contatos -->
+        <div id="addContatos">
+          <form id="formContato" action="">
+            <label for="nomeContato">Nome</label>
+            <input
+              type="text"
+              name="nomeContato"
+              id="nomeContato"
+              placeholder="Nome do contato..."
+            />
+            <br />
+            <label for="numContato">Número de contato</label>
+            <input
+              type="number"
+              name="numContato"
+              id="numContato"
+              placeholder="(77) 9.1234-1234"
+              title="Por favor, insira apenas números"
+            />
+            <br />
+          </form>
+
+          <!-- Botões de salvar e cancelar -->
+          <div id="salvarCancelar">
+            <button type="button" class="botao-salvar">Salvar</button>
+            <button type="button" class="botao-cancelar">Cancelar</button>
+          </div>
+        </div>
+
+        <!-- Lista de contatos -->
+        <div id="listaContatos">
+          <table>
+            <thead>
+              <tr>
+                <td id="tableId">ID</td>
+                <td id="tableContato">Nome do Contato</td>
+                <td id="tableNum">Número</td>
+              </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">
+                  Você possui <span id="totalContatos">0</span> Contatos.
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      &copy;Luiz Henrique - Profissão: Desenvolvedor Full Stack Python v2
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos do corpo da página */
+body {
+  background-color: #f2f0e4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilos do cabeçalho */
+header {
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Estilos do conteúdo principal */
+main {
+  flex: 1;
+}
+
+/* Estilos da seção de contatos */
+main #contatos {
+  background-color: #f3f0ed;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1.3rem;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0 1rem 1rem #a6918567;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+/* Efeito de sombra ao passar o mouse na seção de contatos */
+main #contatos:hover {
+  box-shadow: 0 0 1.3rem 1.3rem #885e5e4f;
+}
+
+/* Estilos do cabeçalho dos contatos */
+main #cabecalhoContatos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+main #cabecalhoContatos img {
+  max-height: 2rem;
+}
+
+/* Estilos do formulário de adição de contatos */
+main #addContatos {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+main form {
+  display: grid;
+  text-align: center;
+}
+
+/* Estilos dos botões salvar e cancelar */
+main .botao-salvar,
+main .botao-cancelar {
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  background-color: #dad4ba;
+  color: #261a0f;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+main button:hover {
+  background-color: #261a0f;
+  color: #dad4ba;
+}
+
+/* Estilos da tabela de contatos */
+table {
+  text-align: center;
+  width: 100%;
+}
+
+table thead {
+  background-color: #735e4cbe;
+  font-weight: 700;
+}
+
+/* Estilos das linhas pares da tabela */
+#listaContatos table tbody tr:nth-child(even) {
+  background-color: #bfab9973;
+}
+
+table td {
+  padding: 0.3rem;
+}
+
+table #tableId {
+  width: 10px;
+}
+
+table #tableContato {
+  width: 170px;
+}
+
+table #tableNum {
+  width: 120px;
+}
+
+table tfoot {
+  background-color: #735e4cbe;
+  font-weight: 700;
+  color: #f3f0ed;
+}
+
+/* Estilos do rodapé */
+footer {
+  background-color: #735e4c;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 3rem;
+  border-radius: 2rem 2rem 0rem 0rem;
+  box-shadow: 0.2rem 0 1rem 1rem #e9e5d0;
+}
